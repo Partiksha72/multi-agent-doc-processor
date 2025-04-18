@@ -3,6 +3,7 @@ from utils import query_groq_llm
 
 @tool
 def document_parser_tool(document: str) -> dict:
+    """Extract sections and structure from the document using Groq."""
     sections = document.split("\n\n")
     structured = {}
     for i, sec in enumerate(sections):

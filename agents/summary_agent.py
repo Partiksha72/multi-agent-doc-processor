@@ -3,6 +3,7 @@ from utils import query_groq_llm
 
 @tool
 def generate_summary(data: dict) -> str:
+    """Synthesizes a final summary using Groq."""
     summary = "--- SUMMARY OVERVIEW---\n\n"
     for section, content in data.items():
         brief = query_groq_llm(f"Summarize briefly:\n\n{content}")
