@@ -8,7 +8,6 @@ def read_document(file_path: str) -> str:
     except Exception as e:
         print(f"Error reading file: {e}")
         return ""
-if 
 
 if __name__ == "__main__":
     # file_path = input("Enter").strip()    
